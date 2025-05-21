@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>واجهة المشرف</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="supervisor.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2 class="text-center">واجهة المشرف</h2>
+
+      <h4>ملخص الطوابير</h4>
+      <ul id="queueSummary" class="list-group mb-3"></ul>
+
+      <h4>سجلات العمليات</h4>
+      <div id="logs" class="log mb-4"></div>
+
+      <h4>التقارير</h4>
+      <button id="reportBtn" class="btn btn-primary mb-3">عرض التقرير</button>
+      <div id="report" class="card card-body mb-3" style="display:none;">
+        <p><strong>الطلاب المستدعون:</strong> <span id="countCalled">0</span></p>
+        <p><strong>الحاضرون:</strong> <span id="countPresent">0</span></p>
+        <p><strong>الغائبون:</strong> <span id="countAbsent">0</span></p>
+        <p><strong>تم إنهاء خدمتهم:</strong> <span id="countServed">0</span></p>
+        
+      </div>
+
+      <div class="btn-group mt-2">
+        <button id="clearLogs" class="btn btn-danger">🗑️ مسح السجلات</button>
+        <button id="clearQueues" class="btn btn-warning">🗑️ مسح الطوابير</button>
+        <button id="clearAll" class="btn btn-secondary">🧹 مسح الكل</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="supervisor.js"></script>
+</body>
+</html>

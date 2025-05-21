@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نظام إدارة الدور - تسجيل الدخول</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- العناوين والشعار خارج الخلفية -->
+  <header class="header text-center">
+    <h2 class="univ-english">Palestine Technical University - Kadoorie</h2>
+    <h3 class="univ-arabic">جامعة فلسطين التقنية - خضوري</h3>
+    <img src="logo.jpg" alt="شعار خضوري" class="univ-logo" />
+  </header>
+
+  <!-- الخلفية مع صندوق التسجيل -->
+  <div class="overlay">
+    <div class="center-container text-center">
+      <form id="loginForm" class="mt-4 text-right">
+        <div class="form-group">
+          <label for="role">اختر الدور:</label>
+          <select class="form-control" id="role" required>
+            <option value="">-- اختر --</option>
+            <option value="student">طالب</option>
+            <option value="staff">موظف</option>
+            <option value="supervisor">مشرف</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">دخول</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

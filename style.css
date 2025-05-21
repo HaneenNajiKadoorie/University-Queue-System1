@@ -1,0 +1,89 @@
+/* خلفية الجسم */
+html, body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  color: white;
+  background-image: url('background.jpg'); /* صورتك المحلية */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* الهيدر */
+.header {
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 5px black;
+  gap: 15px;
+}
+
+/* نصوص الهيدر */
+.univ-english {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.univ-arabic {
+  margin: 5px 0 10px 0;
+  font-weight: 600;
+  font-size: 30px;
+  text-shadow: 1px 1px 5px black;
+}
+
+.univ-logo {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 0 3px black);
+}
+
+/* overlay */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: calc(100vh - 250px); /* 250px تقريبي لارتفاع الهيدر */
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  position: relative;
+  z-index: 1;
+}
+
+/* صندوق التسجيل */
+.center-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 40px;
+  border-radius: 15px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  margin-top: 50px;
+}
+
+/* زر الدخول */
+.btn-primary {
+  background-color: #006400;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #004d00;
+}
